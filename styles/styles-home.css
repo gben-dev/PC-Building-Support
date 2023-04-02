@@ -1,0 +1,63 @@
+
+
+
+
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Backgrounds */
+
+.site-intro {
+    width: 100%;
+    background-color: #000;
+}
+
+.hardware {
+    background-image: linear-gradient(rgba(0,0,0,0.6), 
+    rgba(255, 0, 0, 0.35)), url(/img/img1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.build-pc {
+    background-image: linear-gradient(rgba(0,0,0,0.7), 
+    rgba(0, 0, 0, 0.7)), url(/img/img3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.after-build-pc {
+    background-image: linear-gradient(rgba(100,0,0,0.6), 
+    rgba(0, 0, 0, 0.5)), url(/img/img5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.questions-pc {
+    background-image: linear-gradient(rgba(100,0,0,0.6), 
+    rgba(0, 0, 0, 0.5)), url(/img/img7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.completed-builds {
+    background-image: linear-gradient(rgba(0,0,0,0.6), 
+    rgba(0, 0, 0, 0.5)), url(/img/img8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 1081px) {
+    .container section {
+        height: 600px;
+    }
+    .container .content {
+        width: 60%;
+    }
+    .container .carousel {
+        height: 40vh;
+    }
+} 
+
