@@ -16,35 +16,21 @@
 
 .hardware {
     background-image: linear-gradient(rgba(0,0,0,0.6), 
-    rgba(255, 0, 0, 0.35)), url(/img/img1.jpg);
+    rgba(255, 0, 0, 0.35)), url(/img/background1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .build-pc {
     background-image: linear-gradient(rgba(0,0,0,0.7), 
-    rgba(0, 0, 0, 0.7)), url(/img/img3.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.after-build-pc {
-    background-image: linear-gradient(rgba(100,0,0,0.6), 
-    rgba(0, 0, 0, 0.5)), url(/img/img5.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.questions-pc {
-    background-image: linear-gradient(rgba(100,0,0,0.6), 
-    rgba(0, 0, 0, 0.5)), url(/img/img7.jpg);
+    rgba(0, 0, 0, 0.7)), url(/img/background2.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .completed-builds {
     background-image: linear-gradient(rgba(0,0,0,0.6), 
-    rgba(0, 0, 0, 0.5)), url(/img/img8.jpg);
+    rgba(0, 0, 0, 0.5)), url(/img/background3.jpg);
     background-size: cover;
     background-position: center;
 }
