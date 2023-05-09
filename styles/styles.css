@@ -95,9 +95,11 @@ header .fa-computer {
 .container {
     width: 100vw;
     background-color: #111;
-    border-top: 3px solid #ea2427;
+    /* border-top: 3px solid #ea2427; */
     color: #fff;
 }
+
+
 
 /* Page content */
 

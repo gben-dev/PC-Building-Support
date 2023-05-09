@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="styles/styles.css">
 	<link rel="stylesheet" href="styles/styles-ensambles.css">
 	<script src="https://kit.fontawesome.com/6b74d081c2.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>PC Building Support</title>
 </head>
 <body>
@@ -28,77 +29,94 @@
     </header>
 	<main>
 		<div class="container">
+			<h2>Crea tu ensamble</h2>
+			<p>Escoge los componentes para tu PC y agregale tu Pokemon favorito.</p>
 			<form method="post">
-				<label for="procesador">Procesador:</label>
-				<select id="procesador" name="procesador">
-					<option value="" disabled selected>Seleccione una opción</option>
-					<option value="i3">Intel Core i3</option>
-					<option value="i5">Intel Core i5</option>
-					<option value="i7">Intel Core i7</option>
-					<option value="i9">Intel Core i9</option>
-					<option value="ryzen3">AMD Ryzen 3</option>
-					<option value="ryzen5">AMD Ryzen 5</option>
-					<option value="ryzen7">AMD Ryzen 7</option>
-					<option value="ryzen9">AMD Ryzen 9</option>
-				</select>
-				<br><br>
-				
-				<label for="memoria_ram">Memoria RAM:</label>
-				<select id="memoria_ram" name="memoria_ram">
-					<option value="" disabled selected>Seleccione una opción</option>
-					<option value="4gb">4GB</option>
-					<option value="8gb">8GB</option>
-					<option value="16gb">16GB</option>
-					<option value="32gb">32GB</option>
-					<option value="64gb">64GB</option>
-					<option value="128gb">128GB</option>
-				</select>
-				<br><br>
-				
-				<label for="disco_duro">Disco Duro:</label>
-				<select id="disco_duro" name="disco_duro">
-					<option value="" disabled selected>Seleccione una opción</option>
-					<option value="240gb_hdd">240GB HDD</option>
-					<option value="500gb_hdd">500GB HDD</option>
-					<option value="1tb_hdd">1TB HDD</option>
-					<option value="2tb_hdd">2TB HDD</option>
-					<option value="240gb_ssd">240GB SSD</option>
-					<option value="500gb_ssd">500GB SSD</option>
-					<option value="1tb_ssd">1TB SSD</option>
-					<option value="2tb_ssd">2TB SSD</option>
-				</select>
-				<br><br>
-				
-				<label for="tarjeta_video">Tarjeta de Video:</label>
-				<select id="tarjeta_video" name="tarjeta_video">
-					<option value="" disabled selected>Seleccione una opción</option>
-					<option value="integrada">Integrada</option>
-					<option value="nvidia_gtx_1650">Nvidia GTX 1650</option>
-					<option value="nvidia_rtx_3060">Nvidia RTX 3060</option>
-					<option value="nvidia_gtx_3070">Nvidia GTX 3070</option>
-					<option value="nvidia_gtx_3080">Nvidia GTX 3080</option>
-					<option value="nvidia_rtx_3090">Nvidia RTX 3090</option>
-					<option value="amd_rx_5600_xt">AMD RX 5600 XT</option>
-					<option value="amd_rx_6600_xt">AMD RX 6600 XT</option>
-					<option value="amd_rx_6650_xt">AMD RX 6650 XT</option>
-					<option value="amd_rx_6700_xt">AMD RX 6700 XT</option>
-					<option value="amd_rx_6800_xt">AMD RX 6800 XT</option>
-				</select>
-				<br><br>
-				
-				<label for="fuente_poder">Fuente de poder:</label>
-				<select id="fuente_poder" name="fuente_poder">
-					<option value="" disabled selected>Seleccione una opción</option>
-					<option value="450w">450W</option>
-					<option value="550w">550W</option>
-					<option value="650w">650W</option>
-					<option value="750w">750W</option>
-					<option value="850w">850W</option>
-					<option value="950w">950W</option>
-					<option value="1000w">1000W</option>
-					<option value="1200w">1200W</option>
-				</select>
-				<br><br>
+				<div>
+					<label for="procesador">Procesador:</label>
+					<select id="procesador" name="procesador">
+						<option value="" disabled selected>Seleccione una opción</option>
+						<option value="i3">Intel Core i3</option>
+						<option value="i5">Intel Core i5</option>
+						<option value="i7">Intel Core i7</option>
+						<option value="i9">Intel Core i9</option>
+						<option value="ryzen3">AMD Ryzen 3</option>
+						<option value="ryzen5">AMD Ryzen 5</option>
+						<option value="ryzen7">AMD Ryzen 7</option>
+						<option value="ryzen9">AMD Ryzen 9</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="memoria_ram">Memoria RAM:</label>
+					<select id="memoria_ram" name="memoria_ram">
+						<option value="" disabled selected>Seleccione una opción</option>
+						<option value="4gb">4GB</option>
+						<option value="8gb">8GB</option>
+						<option value="16gb">16GB</option>
+						<option value="32gb">32GB</option>
+						<option value="64gb">64GB</option>
+						<option value="128gb">128GB</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="disco_duro">Disco Duro:</label>
+					<select id="disco_duro" name="disco_duro">
+						<option value="" disabled selected>Seleccione una opción</option>
+						<option value="240gb_hdd">240GB HDD</option>
+						<option value="500gb_hdd">500GB HDD</option>
+						<option value="1tb_hdd">1TB HDD</option>
+						<option value="2tb_hdd">2TB HDD</option>
+						<option value="240gb_ssd">240GB SSD</option>
+						<option value="500gb_ssd">500GB SSD</option>
+						<option value="1tb_ssd">1TB SSD</option>
+						<option value="2tb_ssd">2TB SSD</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="tarjeta_video">Tarjeta de Video:</label>
+					<select id="tarjeta_video" name="tarjeta_video">
+						<option value="" disabled selected>Seleccione una opción</option>
+						<option value="integrada">Integrada</option>
+						<option value="nvidia_gtx_1650">Nvidia GTX 1650</option>
+						<option value="nvidia_rtx_3060">Nvidia RTX 3060</option>
+						<option value="nvidia_gtx_3070">Nvidia GTX 3070</option>
+						<option value="nvidia_gtx_3080">Nvidia GTX 3080</option>
+						<option value="nvidia_rtx_3090">Nvidia RTX 3090</option>
+						<option value="amd_rx_5600_xt">AMD RX 5600 XT</option>
+						<option value="amd_rx_6600_xt">AMD RX 6600 XT</option>
+						<option value="amd_rx_6650_xt">AMD RX 6650 XT</option>
+						<option value="amd_rx_6700_xt">AMD RX 6700 XT</option>
+						<option value="amd_rx_6800_xt">AMD RX 6800 XT</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="fuente_poder">Fuente de poder:</label>
+					<select id="fuente_poder" name="fuente_poder">
+						<option value="" disabled selected>Seleccione una opción</option>
+						<option value="450w">450W</option>
+						<option value="550w">550W</option>
+						<option value="650w">650W</option>
+						<option value="750w">750W</option>
+						<option value="850w">850W</option>
+						<option value="950w">950W</option>
+						<option value="1000w">1000W</option>
+						<option value="1200w">1200W</option>
+					</select>
+				</div>
+
+				<div>
+					<label for="txtIndicador">Nombre del Pokémon:</label>
+					<div>
+						<input type="text" id="txtIndicador" name="txtIndicador" required>
+						<input type="button" id="btnInformacion" value="Buscar Pokemon">
+					</div>
+					<div id="info"></div>
+				</div>
+
 				<input type="submit" value="Enviar">
 			</form>
 		</div>
@@ -123,5 +141,7 @@
     </footer>
     
 	<script src="js/validation.js"></script>
+	<script src="js/validation-service.js"></script>
+    <script src="js/cargar-informacion.js"></script>
 </body>
 </html>
